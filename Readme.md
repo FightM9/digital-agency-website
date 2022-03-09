@@ -1,6 +1,4 @@
-# Enver - Digital Agency
-
- Digital studio website
+ # Digital studio website
 
 ![preview](preview.jpg)
 
