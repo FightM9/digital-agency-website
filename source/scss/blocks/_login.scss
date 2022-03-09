@@ -1,0 +1,34 @@
+// Login
+// Login modal form
+
+// .login {    
+// }
+
+.login__password-group {
+    margin-bottom: -10px;
+}
+
+.login__checkbox-group {
+    margin-bottom: 10px;
+}
+
+.login__text {
+    margin: 0;
+    line-height: 180%;
+}
+
+.login__link {
+    text-decoration: none;
+    color: $primary;
+    text-decoration-color: rgba($primary, 0);
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: rgba($primary, 0.4);
+    }    
+}
+
+.login__footer {
+    text-align: center;
+    margin: 0; 
+}

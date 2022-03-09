@@ -1,0 +1,68 @@
+// Contact section
+
+
+.contact {
+  background: $dark-2;
+}
+
+.contact__wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;;
+  align-items: flex-start;
+  padding: 80px 0;
+  z-index: 2;
+
+  @media (min-width: $xl) {
+    flex-direction: row;
+    align-items: center;
+    padding: 187px 0;
+  }
+}
+
+.contact__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: $font-family-title;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 150%;
+  color: $white;
+
+  @media (min-width: $xl) {
+    margin: 0;
+    margin-right: auto;
+    max-width: 830px;
+    font-size: 60px;
+    line-height: 66px;
+  }
+}
+
+.contact__button {
+  min-width: 200px;
+}
+
+
+/*** Decoration *************************************/
+
+.contact__circle {
+  top: 84%;
+  left: 4%; 
+
+  @media (min-width: $xl) {
+    top: 76%;
+    left: 3%;   
+  }
+}
+
+
+.contact__plus {
+  top: 6%;
+  left: 88%;  
+
+  @media (min-width: $xl) {
+    top: 15%;
+    left: 97.5%;  
+  
+  }
+}

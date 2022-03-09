@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Title -->
+  <title>Enver - Digital Agency</title>
+  <meta name="description" content="Digital Agency">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <!-- Font -->
+  <link rel="preload" href="fonts/Graphik-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/NunitoSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/NunitoSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/NunitoSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page">
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar--expand ">
+      <div class="container">
+        <a class="logo" href="#">
+          <img class="logo__img" src="img/Logo.png" alt="Company logo" width="132" height="40"
+            srcset="img/Logo@2x.png 2x">
+        </a>
+        <button class="navbar__toggler" data-target="navMenu" type="button" aria-label="Toggle navigation">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <div class="navbar__collapse" id="navMenu">
+          <ul class="navbar__nav nav ">
+            <li><a class="nav__link active" href="#">Home</a></li>
+            <li><a class="nav__link" href="#">Services</a></li>
+            <li><a class="nav__link" href="#">Our Project</a></li>
+            <li><a class="nav__link" href="#">About us</a></li>
+          </ul>
+          <button class="btn btn--outline-light js-modal-trigger" data-target="modal-js-1" type="button"
+            tabindex="0">Contact us</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wraper">
+
+          <div class="hero__info">
+            <h1 class="hero__title page__h1">Build Your Awesome Platform</h1>
+            <p class="hero__text">Enver studio is a digital studio that offers several services such as UI/UX Design to
+              developers, we will provide the best service for those of you who use our services.</p>
+            <button type="button" data-target="modal-js-1" class="btn btn--primary btn--icon js-modal-trigger">
+              <span>Our Services</span>
+              <svg role="img" aria-label="User icon" width="16" height="16">
+                <use xlink:href="img/stack.svg#arrow-right-up"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="hero__image-wraper decor">
+            <picture>
+              <source type="image/webp" srcset="img/guy.webp, img/guy@2x.webp 2x">
+              <img class="hero__img" src="img/guy.png" srcset="img/guy@2x.png 2x" width="518" height="635"
+                alt="Guy, smile">
+            </picture>
+            <span class="decor__line hero__line"></span>
+            <span class="decor__circle hero__circle"></span>
+            <span class="decor__triangle hero__triangle"></span>
+            <span class="decor__plus hero__plus"></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Presentation -->
+    <section class="presentation">
+      <div class="container">
+        <div class="presentation__wraper">
+          <div class="presentation__info">
+            <h2 class="presentation__title page__h2">
+              Why Enver Is The Best Choice?</h2>
+            <p class="presentation__text">
+              Watch this one minute video so you understand why you should use our services!
+            </p>
+          </div>
+          <div class="presentation__video">
+            <lite-youtube videoid="_Sl8diqCAFw" style="background-image: url('img/video-cover.jpg');">
+              <button type="button" class="lty-playbtn">
+                <span class="lyt-visually-hidden">Play one minute video so you understand why you should use our
+                  services! </span>
+              </button>
+            </lite-youtube>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service -->
+    <section class="service">
+      <div class="container decor">
+        <span class="decor__triangle service__triangle "></span>
+        <span class="decor__plus service__plus-1"></span>
+        <span class="decor__plus service__plus-2"></span>
+        <h2 class="page__h2 service__title">
+          The Service We Provide For You</h2>
+        <div class="service__list">
+
+          <div class="service__item card">
+            <div class="card__icon card__icon--blue">
+              <svg role="img" aria-label="icon" width="32" height="32">
+                <use xlink:href="img/stack.svg#code"></use>
+              </svg>
+            </div>
+            <h3 class="card__name">
+              Development
+            </h3>
+            <p class="card__description">
+              Create a platform with the best and coolest quality from us.
+            </p>
+          </div>
+
+          <div class="service__item card">
+            <div class="card__icon card__icon--red">
+              <svg role="img" aria-label="icon" width="32" height="32">
+                <use xlink:href="img/stack.svg#layer"></use>
+              </svg>
+            </div>
+            <h3 class="card__name">
+              UI/UX Designer
+            </h3>
+            <p class="card__description">
+              We provide UI/UX Design services, and of course with the best quality.
+            </p>
+          </div>
+
+          <div class="service__item card">
+            <div class="card__icon card__icon--yellow">
+              <svg role="img" aria-label="icon" width="32" height="32">
+                <use xlink:href="img/stack.svg#design"></use>
+              </svg>
+            </div>
+            <h3 class="card__name">
+              Graphik Designer
+            </h3>
+            <p class="card__description">
+              We provide Graphic Design services, with the best designers.
+            </p>
+          </div>
+
+          <div class="service__item card">
+            <div class="card__icon card__icon--blue">
+              <svg role="img" aria-label="icon" width="32" height="32">
+                <use xlink:href="img/stack.svg#align-vertically"></use>
+              </svg>
+            </div>
+            <h3 class="card__name">
+              Motion Graphik
+            </h3>
+            <p class="card__description">
+              Create a platform with the best and coolest quality from us.
+            </p>
+          </div>
+
+          <div class="service__item card">
+            <div class="card__icon card__icon--red">
+              <svg role="img" aria-label="icon" width="32" height="32">
+                <use xlink:href="img/stack.svg#camera"></use>
+              </svg>
+            </div>
+            <h3 class="card__name">
+              Photography
+            </h3>
+            <p class="card__description">
+              We provide Photography services, and of course with the best quality.
+            </p>
+          </div>
+
+          <div class="service__item card card">
+            <div class="card__icon card__icon--yellow">
+              <svg role="img" aria-label="icon" width="32" height="32">
+                <use xlink:href="img/stack.svg#video"></use>
+              </svg>
+            </div>
+            <h3 class="card__name">
+              Videography
+            </h3>
+            <p class="card__description">
+              Create a platform with the best and coolest quality from us.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Portofolio -->
+    <section class="portofolio">
+      <div class="container decor">
+        <span class="decor__line portofolio__line"></span>
+        <span class="decor__circle portofolio__circle"></span>
+        <h2 class="page__h2 portofolio__title">
+          Our Awesome Portofolio
+        </h2>
+        <div class="portofolio__slider">
+
+          <div>
+            <div class="portofolio__case">
+              <picture>
+                <source type="image/webp" srcset="img/case-1.webp, img/case-1@2x.webp 2x">
+                <img class="portofolio__case-img" src="img/case-1.png" srcset="img/case-1@2x.png 2x" width="336"
+                  height="253" alt="Squid game mobile app" loading="lazy">
+              </picture>
+            </div>
+          </div>
+
+          <div>
+            <div class="portofolio__case">
+              <picture>
+                <source type="image/webp" srcset="img/case-2.webp, img/case-2@2x.webp 2x">
+                <img class="portofolio__case-img" src="img/case-2.png" srcset="img/case-2@2x.png 2x" width="336"
+                  height="253" alt="Interior design agency web-site">
+              </picture>
+            </div>
+          </div>
+
+          <div>
+            <div class="portofolio__case">
+              <picture>
+                <source type="image/webp" srcset="img/case-3.webp, img/case-3@2x.webp 2x">
+                <img class="portofolio__case-img" src="img/case-3.png" srcset="img/case-3@2x.png 2x" width="336"
+                  height="253" alt="digital agency web site" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact ">
+      <h2 class="visually-hidden">Contact us</h2>
+      <div class="container decor">
+        <span class="decor__circle contact__circle "></span>
+        <span class="decor__plus contact__plus"></span>
+        <div class="contact__wraper">
+          <p class="contact__title">
+            Contact us for the service you want to use
+          </p>
+          <button type="button" class="btn btn--primary contact__button js-modal-trigger"
+            data-target="modal-js-1">Contact us</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Background light -->
+    <div class="light">
+      <span class="light-1 light--blue"></span>
+      <span class="light-2 light--red"></span>
+      <span class="light-3 light--blue"></span>
+      <span class="light-4 light--blue"></span>
+      <span class="light-5 light--red"></span>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal-js-1" class="modal ">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog ">
+      <div class="modal-content login">
+        <button type="button" class="modal-close" aria-label="Close"></button>
+        <div class="modal-header">
+          <h2 class="modal-title">
+            Login
+          </h2>
+        </div>
+        <div class="modal-body">
+          <form class="form" method="post" action="https://echo.htmlacademy.ru" target="_blank">
+            <div class="form__group">
+              <label class="form__label" for="login">
+                Email</label>
+              <input class="form__input js-modal-focus" id="login" type="email" value="info@enver.com"
+                placeholder="email@example.com" name="email" />
+            </div>
+            <div class="form__group login__password-group">
+              <label class="form__label" for="password">
+                Password</label>
+              <input class="form__input" id="password" type="password" value="12345" placeholder="hello"
+                name="password" />
+            </div>
+            <div class="form__group form__group--checkbox login__checkbox-group">
+              <label class="form__label" for="remember-password">
+                Remember me
+                <input class="visually-hidden" type="checkbox" checked="checked" name="remember"
+                  id="remember-password">
+                <span class="form__checkbox-indicator"></span>
+              </label>
+
+
+            </div>
+            <button type="submit" class="btn btn--primary login__btn">Login</button>
+          </form>
+
+        </div>
+        <div class="modal__footer login__footer">
+          <p class="login__text"><a href="" class="login__link">
+              I forgot my password</a></p>
+          <p class="login__text">
+            Don't have an account? <a class="login__link" href=""> Sing Up</a> </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer-wraper">
+        <a class="logo" href="#">
+          <img class="logo-img" src="img/Logo.png" alt="Company logo" width="132" height="40"
+            srcset="img/Logo@2x.png 2x">
+        </a>
+        <ul class="footer-nav nav">
+          <li><a class="nav__link" href="#">Support</a></li>
+          <li><a class="nav__link" href="#">Privacy Policy</a></li>
+          <li><a class="nav__link" href="#">Terms and Conditions</a></li>
+        </ul>
+        <p class="footer-copyright">© 2022 Enver, All Rights Reserved</p>
+    </nav>
+    </div>
+  </footer>
+
+  <!-- Sctipt -->
+  <script src="js/plugins.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

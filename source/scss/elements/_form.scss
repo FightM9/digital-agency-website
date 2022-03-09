@@ -1,0 +1,102 @@
+// Form
+// Label, input, checkbox
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__label {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: normal;
+
+  @media (min-width: $xl) {
+    font-size: 20px;
+  }  
+}
+
+.form__input {
+  padding: 16px;
+  border: none;
+  border-radius: 2px;
+  outline-color: $primary;
+
+  &:focus-visible {
+    outline: solid 4px $primary;
+  }
+}
+
+.form__group--checkbox {
+  flex-direction: row;
+  align-items: center;
+
+  & .form__label {
+    padding-left: 24px;
+  }
+
+  @media (min-width: $xl) {
+
+    & .form__label {
+      padding-left: 34px;
+    }
+  }
+}
+
+.form__checkbox-indicator {
+  position: absolute;
+  top: 2.8px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background: transparent;
+  border: 1px solid rgba($color: $white, $alpha: 0.4);
+  border-radius: 2px;
+  transition: all ease-in-out 0.2s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 9px;
+    border: solid $white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  @media (min-width: $xl) {
+    height: 20px;
+    width: 20px;
+
+    &::after {
+      left: 6.5px;
+      top: 2px;
+      width: 5px;
+      height: 11px;
+    }
+
+  }
+}
+
+input[type="checkbox"]:checked {
+    
+  & ~ .form__checkbox-indicator {
+    background-color: $primary;
+    border-color: $primary;
+  }
+
+  & ~ .form__checkbox-indicator::after {
+    display: block;
+  }
+}

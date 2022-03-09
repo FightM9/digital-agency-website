@@ -1,0 +1,67 @@
+// Portfolia section
+
+.portofolio {
+  margin-bottom: $section-mb;
+  
+  @media (min-width: $xl) {
+    margin-bottom: $section-mb-xl + 10px;
+  }
+}
+
+.portofolio__title {
+  margin-bottom: 70px;
+}
+
+.portofolio__slider {
+  padding-bottom: 88px;
+
+  @media (min-width: $xl) {
+    padding-bottom: 74px;
+
+    & > div:nth-child(2) {
+      padding-top: 58px;
+    }
+    & > div:nth-child(3) {
+      padding-top: calc(58px * 2);
+    }
+  }
+
+  .portofolio__case {
+    padding: 24px;
+    object-fit: cover;
+    font-size: 0;
+    border-radius: 14px;
+    background-color: $dark-2;
+  }
+}
+
+.portofolio__case-img {
+  border-radius: 12px;
+}
+
+
+/*** Decoration *************************************/
+
+
+.portofolio__line {
+  top: 110%;
+  left: 9%;
+  transform: scale(1.1);
+
+  @media (min-width: $xl) {
+    top: 99%;
+    left: -3.8%;
+    transform: scale(1.1);
+  }
+}
+.portofolio__circle {
+  top: 49px;
+  left: 82%;
+  transform: scale(1.2) rotate(339deg);
+
+  @media (min-width: $xl) {
+    top: 49px;
+    left: 90.3%;
+    transform: scale(1.2) rotate(339deg);
+  }
+}

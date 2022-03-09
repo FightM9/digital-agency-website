@@ -1,0 +1,91 @@
+// Service section
+
+.service {
+  margin-bottom: $section-mb;
+
+  @media (min-width: $xl) {
+    margin-bottom: $section-mb-xl;
+  }
+}
+
+.service__title {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: left;
+
+  @media (min-width: $sm) {
+    text-align: center;
+  }  
+  
+  @media (min-width: $xl) {
+    text-align: center;
+  }
+}
+
+/*** Service list *************************************/
+
+.service__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  
+  @media (min-width: $sm) {
+    grid-template-columns: 1fr 1fr
+  }
+
+  @media (min-width: $xl) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*** Service item *************************************/
+
+.service__item {
+  padding: 48px 16px;
+
+  & >:not(:last-child)  {
+    margin-bottom: 20px;
+  }
+}
+
+/*** Decoration *************************************/
+
+.service__triangle {
+  top: -3.5%;
+  left: 11%;
+  
+  @media (min-width: $sm) {
+    top: -8%;
+    left: 7%;
+  }
+  
+  @media (min-width: $xl) {
+    top: -3%;
+    left: 7%;
+  }
+
+}
+
+.service__plus-1 {
+  top: 5%;
+  left: 90%;
+    
+  @media (min-width: $xl) {
+    top: 11.5%;
+    left: 97.5%;
+    transform: rotate(59deg);
+  }  
+}
+
+.service__plus-2 {
+  top: 100%;
+  left: 10%;
+    
+  @media (min-width: $xl) {
+    top: 100.5%;
+    left: -0%;
+    transform: rotate(24deg);
+  }
+
+}

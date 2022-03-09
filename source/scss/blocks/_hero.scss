@@ -1,0 +1,102 @@
+// Hero section
+
+.hero__wraper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: $section-mb;
+
+  @media (min-width: $xl) {
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: $section-mb-xl;
+  }
+}
+
+.hero__info {
+  width: 100%;
+  margin-bottom: 50px;
+
+  @media (min-width: $xl) {   
+    margin: 0;
+    margin-right: 100px;    
+    padding-top: 46px;
+    max-width: 540px;
+  }
+}
+
+.hero__image-wraper {
+  object-fit: cover;
+
+  @media (min-width: $xl) {
+    width: 518px;
+    height: 635px;
+  }
+}
+
+.hero__img {
+  position: relative;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+
+  @media (min-width: $xl) {
+    margin: auto 0;
+    margin-bottom: 20px;
+  }
+}
+
+.hero__text {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 21px;
+  line-height: 39px;
+  letter-spacing: -0.65px;
+}
+
+/*** Decoration *************************************/
+
+.hero__line {
+  top: -1%;
+  left: -1%;
+}
+
+.hero__circle {
+  top: -41px;
+  right: 3%;
+}
+
+.hero__triangle {
+  bottom: -5%;
+  left: 2%;
+}
+
+.hero__plus {
+  bottom: 11%;
+  right: 3%;
+}
+
+@media (min-width: $xl) {
+  .hero__line {
+    top: 7%;
+    left: -25%;
+  }
+
+  .hero__circle {
+    top: 0%;
+    right: 3%;
+  }
+
+  .hero__triangle {
+    bottom: 11%;
+    left: -31%;
+  }
+
+  .hero__plus {
+    bottom: 10%;
+    right: 3%;
+  }
+}

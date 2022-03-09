@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.page {
+  min-width: $container-min-width;
+  overflow-x: hidden;
+  font-family: $font-family;
+  line-height: $line-height;
+  color: $body-color;
+  background-color: $body-bg;
+  text-overflow: ellipsis;
+
+  @media (min-width: $xl) {
+    font-size: $font-size-xl;
+    line-height: $line-height-xl;
+  }
+}
+
+
+.container {
+  @include make-container($container-padding-x);
+
+  @media (min-width: $sm) {
+    width: $container-sm;
+  }
+  @media (min-width: $md) {
+    width: $container-md;
+  }
+  @media (min-width: $lg) {
+    width: $container-lg;
+  }
+  @media (min-width: $xl) {
+    width: $container-xl;
+  }
+}

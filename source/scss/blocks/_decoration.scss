@@ -1,0 +1,122 @@
+//  Decoratin element
+//  Triangle, circle, line, plus
+
+
+.decor {
+  position: relative;
+  max-width: 100%;
+}
+
+.decor__line,
+.decor__circle,
+.decor__plus,
+.decor__triangle {
+  position: absolute;
+}
+
+.decor__line {
+  width: 61px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg width='99' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m2 2 23.3 24.2L39.7 8.6 57 26.2 76 8.6 97 30' stroke='%23E7E7E7' stroke-width='4'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: float 5s ease-in-out  infinite;
+
+  @media (min-width: $xl) {
+    width: 95px;
+    height: 28px;
+  }
+}
+
+.decor__circle {
+  width: 28px;
+  height: 28px;
+  border: solid 3px $white;
+  border-radius: 50px;
+  animation: float 3.8s ease-in-out infinite;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: -45%;
+    width: 28px;
+    height: 28px;
+    border: solid 1px $white;
+    border-radius: 50px;
+  }
+
+  @media (min-width: $xl) {
+    width: 40px;
+    height: 40px;
+
+    &::after {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.decor__triangle {
+  width: 45px;
+  height: 45px;
+  background-image: url("data:image/svg+xml,%3Csvg width='57' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 61.1 4 3.1l49.5 30.2L2.5 61.1Z' stroke='%23E7E7E7' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: float 3.8s ease-in-out 0.8s infinite;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: -10%;
+    width: 45px;
+    height: 45px;
+    background-image: url("data:image/svg+xml,%3Csvg width='57' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 61.1 4 3.1l49.5 30.2L2.5 61.1Z' stroke='%23E7E7E7' stroke-width='1' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: $xl) {
+    width: 73px;
+    height: 73px;
+
+    &::after {
+      content: "";
+      width: 73px;
+      height: 73px;
+    }
+  }
+}
+
+.decor__plus {
+  width: 3px;
+  height: 26px;
+  background-color: $white;
+  border-radius: 50px;  
+  animation: float 4.4s ease-in-out 1s infinite;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 26px;
+    background-color: $white;
+    border-radius: 50px;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $xl) {
+    height: 34px;
+
+    &::after {
+      height: 34px;
+    }
+  }
+
+
+}
